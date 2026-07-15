@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vortex Studio | Immersive Digital Architectures</title>
+  <meta name="description" content="Vortex Studio builds high-end glassmorphic interfaces, interactive applications, and premium brand designs.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Interactive mouse glow tracking background -->
+  <div class="interactive-cursor-glow" id="cursor-glow"></div>
+
+  <!-- HUD Navigation Dock (Fixed & Persistent) -->
+  <header class="hud-header" id="main-header">
+    <div class="container">
+      <nav class="hud-nav" id="hud-navigation">
+        <!-- Logo -->
+        <a href="index.html" class="hud-logo" id="logo-link">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+          </svg>
+          <span>VORTEX<span>STUDIO</span></span>
+        </a>
+
+        <!-- Desktop Navigation Items -->
+        <div class="hud-menu-container">
+          <ul class="hud-menu" id="hud-menu-list">
+            <li><a href="index.html" class="hud-link active" id="link-home">Home</a></li>
+            <li><a href="services.html" class="hud-link" id="link-services">Services</a></li>
+            <li><a href="about.html" class="hud-link" id="link-about">About</a></li>
+            <li><a href="contact.html" class="hud-link" id="link-contact">Contact</a></li>
+          </ul>
+          <!-- Floating background indicator pill -->
+          <div class="nav-indicator-pill" id="nav-indicator"></div>
+        </div>
+
+        <!-- Action Button -->
+        <div class="hud-actions">
+          <a href="contact.html" class="cyber-btn cyber-btn-secondary" style="padding: 8px 20px; font-size: 0.85rem;">Get in Touch</a>
+        </div>
+
+        <!-- Hamburger toggle for mobile devices -->
+        <button class="hud-hamburger" id="hamburger-btn" aria-label="Toggle Navigation">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+            <line x1="3" y1="12" x2="21" y2="12" id="line-mid"></line>
+            <line x1="3" y1="6" x2="21" y2="6" id="line-top"></line>
+            <line x1="3" y1="18" x2="21" y2="18" id="line-bot"></line>
+          </svg>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Overlay -->
+  <div class="mobile-drawer" id="mobile-navigation-drawer">
+    <ul class="mobile-menu">
+      <li><a href="index.html" class="mobile-link active" id="mob-link-home">Home</a></li>
+      <li><a href="services.html" class="mobile-link" id="mob-link-services">Services</a></li>
+      <li><a href="about.html" class="mobile-link" id="mob-link-about">About</a></li>
+      <li><a href="contact.html" class="mobile-link" id="mob-link-contact">Contact</a></li>
+      <li style="margin-top: 20px;">
+        <a href="contact.html" class="cyber-btn cyber-btn-primary">Initiate Project</a>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Hero Section -->
+  <section class="section">
+    <div class="container hero-layout">
+      <!-- Left Hero Column -->
+      <div class="hero-content">
+        <div class="status-badge">
+          <span></span>System Active: Core v3.0
+        </div>
+        <h1>Design Beyond <br><span class="text-gradient">The Static Screen</span></h1>
+        <p class="subtitle">We engineer premium responsive interfaces, immersive layouts, and interactive design systems that push the boundary of web aesthetics.</p>
+        <div class="hero-actions">
+          <a href="services.html" class="cyber-btn cyber-btn-primary">Explore Services
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </a>
+          <a href="contact.html" class="cyber-btn cyber-btn-secondary">Consultation</a>
+        </div>
+      </div>
+
+      <!-- Right Interactive Mock HUD Panel -->
+      <div class="hero-visual">
+        <div class="glass-panel hud-mockup">
+          <div class="mockup-header">
+            <div class="mockup-dots">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <div class="mockup-title">Interactive Console</div>
+          </div>
+          <div class="mockup-body">
+            <div class="mockup-row">
+              <div class="mockup-row-left">
+                <div class="mockup-icon">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                    <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                    <polyline points="2 17 12 22 22 17"></polyline>
+                    <polyline points="2 12 12 17 22 12"></polyline>
+                  </svg>
+                </div>
+                <div class="mockup-text">
+                  <h4>Rendering Core</h4>
+                  <p>WebGl Layout Grid</p>
+                </div>
+              </div>
+              <div class="mockup-val text-gradient">98.4%</div>
+            </div>
+            <div class="mockup-row">
+              <div class="mockup-row-left">
+                <div class="mockup-icon">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                    <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+                  </svg>
+                </div>
+                <div class="mockup-text">
+                  <h4>Fluid Physics</h4>
+                  <p>Inertial scroll physics</p>
+                </div>
+              </div>
+              <div class="mockup-val text-gradient-purple">60 FPS</div>
+            </div>
+            <div class="mockup-row">
+              <div class="mockup-row-left">
+                <div class="mockup-icon">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                    <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9M13.73 21a2 2 0 0 1-3.46 0"></path>
+                  </svg>
+                </div>
+                <div class="mockup-text">
+                  <h4>Cybernetic Dock</h4>
+                  <p>Dynamic hover matrix</p>
+                </div>
+              </div>
+              <div class="mockup-val" style="color: var(--accent-pink);">Active</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Core Expertise / Features Section -->
+  <section class="section" style="padding-top: 60px;">
+    <div class="container">
+      <div class="section-header">
+        <div class="status-badge" style="margin-bottom: 12px;"><span></span>Capabilities</div>
+        <h2>Engineered For Excellence</h2>
+        <p>We blend technical craftsmanship with premium aesthetic layouts to build web experiences that leave a lasting mark.</p>
+      </div>
+
+      <div class="grid-features">
+        <!-- Feature 1 -->
+        <div class="glass-panel feature-card">
+          <div class="feature-card-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10"></circle>
+              <line x1="2" y1="12" x2="22" y2="12"></line>
+              <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+            </svg>
+          </div>
+          <h3>UI/UX Architecture</h3>
+          <p>We design pixel-perfect layouts, dark modes, and rich component patterns tailored to convey high-end brand value.</p>
+          <a href="services.html" class="feature-link">Read More
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </a>
+        </div>
+
+        <!-- Feature 2 -->
+        <div class="glass-panel feature-card">
+          <div class="feature-card-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+              <polyline points="2 17 12 22 22 17"></polyline>
+              <polyline points="2 12 12 17 22 12"></polyline>
+            </svg>
+          </div>
+          <h3>Creative Development</h3>
+          <p>Writing highly optimized, customized frontend systems using vanilla code structures, responsive containers, and web standards.</p>
+          <a href="services.html" class="feature-link">Read More
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </a>
+        </div>
+
+        <!-- Feature 3 -->
+        <div class="glass-panel feature-card">
+          <div class="feature-card-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+            </svg>
+          </div>
+          <h3>Immersive Micro-interactions</h3>
+          <p>Delight your users with custom cursor tracking blobs, magnetic nav links, status badges, and smooth state changes.</p>
+          <a href="services.html" class="feature-link">Read More
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="index.html" class="hud-logo">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+            </svg>
+            <span>VORTEX<span>STUDIO</span></span>
+          </a>
+          <p>Architecting premium glassmorphic frameworks and interactive design structures for modern businesses.</p>
+        </div>
+        <div class="footer-links">
+          <h4>Studio</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>Capabilities</h4>
+          <ul>
+            <li><a href="services.html">UI/UX Design</a></li>
+            <li><a href="services.html">Creative Coding</a></li>
+            <li><a href="services.html">Fluid Systems</a></li>
+            <li><a href="services.html">Brand Architectures</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>Contact</h4>
+          <ul>
+            <li><span style="color: var(--text-secondary);">inbox@vortex.agency</span></li>
+            <li><span style="color: var(--text-secondary);">+1 (555) 019-3829</span></li>
+            <li><span style="color: var(--text-secondary);">Silicon Valley, CA</span></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Vortex Creative Studio. Built from scratch with premium aesthetics. All rights reserved.</p>
+        <div class="footer-socials">
+          <a href="#" class="team-social-link"><span style="font-size: 0.8rem; font-weight: bold;">X</span></a>
+          <a href="#" class="team-social-link"><span style="font-size: 0.8rem; font-weight: bold;">IG</span></a>
+          <a href="#" class="team-social-link"><span style="font-size: 0.8rem; font-weight: bold;">LN</span></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

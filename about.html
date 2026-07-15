@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vortex Studio | About Us</title>
+  <meta name="description" content="Learn about Vortex Studio, our design manifesto, creative philosophy, and our team of digital craftsmen.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Interactive mouse glow tracking background -->
+  <div class="interactive-cursor-glow" id="cursor-glow"></div>
+
+  <!-- HUD Navigation Dock (Fixed & Persistent) -->
+  <header class="hud-header" id="main-header">
+    <div class="container">
+      <nav class="hud-nav" id="hud-navigation">
+        <!-- Logo -->
+        <a href="index.html" class="hud-logo" id="logo-link">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+          </svg>
+          <span>VORTEX<span>STUDIO</span></span>
+        </a>
+
+        <!-- Desktop Navigation Items -->
+        <div class="hud-menu-container">
+          <ul class="hud-menu" id="hud-menu-list">
+            <li><a href="index.html" class="hud-link" id="link-home">Home</a></li>
+            <li><a href="services.html" class="hud-link" id="link-services">Services</a></li>
+            <li><a href="about.html" class="hud-link active" id="link-about">About</a></li>
+            <li><a href="contact.html" class="hud-link" id="link-contact">Contact</a></li>
+          </ul>
+          <!-- Floating background indicator pill -->
+          <div class="nav-indicator-pill" id="nav-indicator"></div>
+        </div>
+
+        <!-- Action Button -->
+        <div class="hud-actions">
+          <a href="contact.html" class="cyber-btn cyber-btn-secondary" style="padding: 8px 20px; font-size: 0.85rem;">Get in Touch</a>
+        </div>
+
+        <!-- Hamburger toggle for mobile devices -->
+        <button class="hud-hamburger" id="hamburger-btn" aria-label="Toggle Navigation">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+            <line x1="3" y1="12" x2="21" y2="12" id="line-mid"></line>
+            <line x1="3" y1="6" x2="21" y2="6" id="line-top"></line>
+            <line x1="3" y1="18" x2="21" y2="18" id="line-bot"></line>
+          </svg>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Overlay -->
+  <div class="mobile-drawer" id="mobile-navigation-drawer">
+    <ul class="mobile-menu">
+      <li><a href="index.html" class="mobile-link" id="mob-link-home">Home</a></li>
+      <li><a href="services.html" class="mobile-link" id="mob-link-services">Services</a></li>
+      <li><a href="about.html" class="mobile-link active" id="mob-link-about">About</a></li>
+      <li><a href="contact.html" class="mobile-link" id="mob-link-contact">Contact</a></li>
+      <li style="margin-top: 20px;">
+        <a href="contact.html" class="cyber-btn cyber-btn-primary">Initiate Project</a>
+      </li>
+    </ul>
+  </div>
+
+  <!-- About Section -->
+  <section class="section">
+    <div class="container">
+      <div class="about-grid-manifesto">
+        <!-- Manifesto Left -->
+        <div>
+          <div class="status-badge"><span></span>Our Story</div>
+          <h2>A Manifesto of <br><span class="text-gradient">Digital Space</span></h2>
+          <p style="margin: 24px 0; font-size: 1.1rem; line-height: 1.8;">Vortex Studio was born out of a desire to break free from cookie-cutter designs. We believe that web pages are not simply digital brochures, but living canvases. By combining custom scripting systems, glassmorphism layers, and responsive layout flows, we craft virtual spaces that align perfectly with modern brand aesthetics.</p>
+          <a href="contact.html" class="cyber-btn cyber-btn-primary">Connect With Us</a>
+        </div>
+
+        <!-- Stats Grid Right -->
+        <div class="stats-card-group">
+          <div class="glass-panel stat-mini-card">
+            <h3 class="text-gradient">40+</h3>
+            <p>Projects Launched</p>
+          </div>
+          <div class="glass-panel stat-mini-card">
+            <h3 class="text-gradient-purple">99.9%</h3>
+            <p>Uptime Precision</p>
+          </div>
+          <div class="glass-panel stat-mini-card">
+            <h3 class="text-gradient-purple">60fps</h3>
+            <p>Interactions</p>
+          </div>
+          <div class="glass-panel stat-mini-card">
+            <h3 class="text-gradient">15+</h3>
+            <p>Industry Awards</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Team Members Section -->
+  <section class="section" style="padding-top: 40px;">
+    <div class="container">
+      <div class="section-header">
+        <div class="status-badge" style="margin-bottom: 12px;"><span></span>Guild members</div>
+        <h2>Meet Our Craftsmen</h2>
+        <p>A selective collective of digital designers, frontend engineers, and brand strategists.</p>
+      </div>
+
+      <div class="team-grid">
+        <!-- Team 1 -->
+        <div class="glass-panel team-card">
+          <div class="team-avatar-wrapper">
+            <div class="team-avatar-ring"></div>
+            <div class="team-avatar">AL</div>
+          </div>
+          <h3>Aria Loomis</h3>
+          <p>Creative Director</p>
+          <div class="team-socials">
+            <a href="#" class="team-social-link"><span style="font-size: 0.8rem; font-weight: bold;">X</span></a>
+            <a href="#" class="team-social-link"><span style="font-size: 0.8rem; font-weight: bold;">IG</span></a>
+          </div>
+        </div>
+
+        <!-- Team 2 -->
+        <div class="glass-panel team-card">
+          <div class="team-avatar-wrapper">
+            <div class="team-avatar-ring" style="border-top-color: var(--accent-pink); border-bottom-color: var(--accent-cyan);"></div>
+            <div class="team-avatar" style="color: var(--accent-pink);">KV</div>
+          </div>
+          <h3>Kaelen Vance</h3>
+          <p>Frontend Architect</p>
+          <div class="team-socials">
+            <a href="#" class="team-social-link"><span style="font-size: 0.8rem; font-weight: bold;">X</span></a>
+            <a href="#" class="team-social-link"><span style="font-size: 0.8rem; font-weight: bold;">LN</span></a>
+          </div>
+        </div>
+
+        <!-- Team 3 -->
+        <div class="glass-panel team-card">
+          <div class="team-avatar-wrapper">
+            <div class="team-avatar-ring"></div>
+            <div class="team-avatar">NR</div>
+          </div>
+          <h3>Nova Rayne</h3>
+          <p>Brand Strategist</p>
+          <div class="team-socials">
+            <a href="#" class="team-social-link"><span style="font-size: 0.8rem; font-weight: bold;">IG</span></a>
+            <a href="#" class="team-social-link"><span style="font-size: 0.8rem; font-weight: bold;">LN</span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="index.html" class="hud-logo">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+            </svg>
+            <span>VORTEX<span>STUDIO</span></span>
+          </a>
+          <p>Architecting premium glassmorphic frameworks and interactive design structures for modern businesses.</p>
+        </div>
+        <div class="footer-links">
+          <h4>Studio</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>Capabilities</h4>
+          <ul>
+            <li><a href="services.html">UI/UX Design</a></li>
+            <li><a href="services.html">Creative Coding</a></li>
+            <li><a href="services.html">Fluid Systems</a></li>
+            <li><a href="services.html">Brand Architectures</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>Contact</h4>
+          <ul>
+            <li><span style="color: var(--text-secondary);">inbox@vortex.agency</span></li>
+            <li><span style="color: var(--text-secondary);">+1 (555) 019-3829</span></li>
+            <li><span style="color: var(--text-secondary);">Silicon Valley, CA</span></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Vortex Creative Studio. Built from scratch with premium aesthetics. All rights reserved.</p>
+        <div class="footer-socials">
+          <a href="#" class="team-social-link"><span style="font-size: 0.8rem; font-weight: bold;">X</span></a>
+          <a href="#" class="team-social-link"><span style="font-size: 0.8rem; font-weight: bold;">IG</span></a>
+          <a href="#" class="team-social-link"><span style="font-size: 0.8rem; font-weight: bold;">LN</span></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
